@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(title: "app", home: HomePage()));
+  runApp(MaterialApp(title: "MyApp", home: HomePage()));
 }
 
 class HomePage extends StatelessWidget {
@@ -11,11 +11,31 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("hello"),
-        backgroundColor: Colors.amber,
+        title: Text("Flutter"),
+        backgroundColor: Colors.teal,
       ),
-      body: Container(
-        child: Text("hello"),
+      body: Center(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Container(
+              color: Colors.redAccent,
+              width: 100,
+              height: 100,
+            ),
+            Container(
+              color: Colors.green,
+              width: 100,
+              height: 100,
+            ),
+            Container(
+              color: Colors.teal,
+              width: 100,
+              height: 100,
+            )
+          ],
+        ),
       ),
     );
   }
