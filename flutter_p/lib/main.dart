@@ -48,6 +48,11 @@ class HomePage extends StatelessWidget {
                 title: Text("Personal"),
                 subtitle: Text("Sakshi rathod"),
                 trailing: Icon(Icons.edit)),
+            ListTile(
+                leading: Icon(Icons.person),
+                title: Text("Personal"),
+                subtitle: Text("Sakshi rathod"),
+                trailing: Icon(Icons.edit)),
           ],
         )));
   }
